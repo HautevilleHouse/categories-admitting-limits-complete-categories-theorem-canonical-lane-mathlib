@@ -1,0 +1,15 @@
+import canonicalLaneMathlib.AdmissibleClass
+import HautevilleHouse.CategoriesAdmittingLimitsCompleteCategoriesTheoremCanonicalLaneLean.AdmissibleClassBridge
+import HautevilleHouse.CategoriesAdmittingLimitsCompleteCategoriesTheoremCanonicalLaneLean.GateLemmas
+
+namespace HautevilleHouse
+namespace CategoriesAdmittingLimitsCompleteCategoriesTheoremCanonicalLaneLean
+
+def ConstrainedCompleteCategoryClosure (A : AdmissibleClass) : Prop :=
+  bridgeClosed A ∧ gateClosed A
+
+theorem constrained_complete_category_endgame (A : AdmissibleClass) : ConstrainedCompleteCategoryClosure A :=
+  And.intro (bridge_from_admissible_class A) (gate_from_admissible_class A)
+
+end CategoriesAdmittingLimitsCompleteCategoriesTheoremCanonicalLaneLean
+end HautevilleHouse

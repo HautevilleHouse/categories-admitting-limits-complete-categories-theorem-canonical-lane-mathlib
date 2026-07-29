@@ -1,0 +1,9 @@
+import categories_admitting_limits_complete_categories_theorem_canonical_lane_mathlib.GateLemmas
+namespace HautevilleHouse
+namespace categories_admitting_limits_complete_categories_theorem_canonical_lane_mathlib
+structure ConstrainedTheoremClosure where
+  admissible :: intro :: constraint :: consequence :: proof ::
+theorem canonical : ConstrainedTheoremClosure :=
+  ConstrainedTheoremClosure.intro
+end categories_admitting_limits_complete_categories_theorem_canonical_lane_mathlib
+end HautevilleHouse
